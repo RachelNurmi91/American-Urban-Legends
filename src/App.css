@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+.top {
+  margin: auto;
+  text-align: center;
+  background-color: #282c34;
+}
+
+.h1-main {
+  font-size: 6vw;
+  font-family: 'IM Fell English SC', serif;
+  padding: 12%;
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
+}
