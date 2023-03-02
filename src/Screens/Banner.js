@@ -1,9 +1,22 @@
+import { useSpring, animated } from "@react-spring/web";
+
 const Banner = () => {
 
+    const springs = useSpring({
+        from: { x: 0 },
+        to: { x: 100 },
+    })
+
     return (
-        <div id="banner">
-            <h1 className="title-banner">AMERICAN URBAN LEGENDS</h1>
-        </div>
+        <animated.div
+            style={{
+                width: 80,
+                height: 80,
+                background: '#ff6d6d',
+                borderRadius: 8,
+                ...springs,
+            }}
+        />
     )
 
 };
