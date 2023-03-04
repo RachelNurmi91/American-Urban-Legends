@@ -2,21 +2,33 @@ import { useSpring, animated } from "@react-spring/web";
 
 const Banner = () => {
 
-    const springs = useSpring({
-        from: { x: 0 },
-        to: { x: 100 },
-    })
+    const [springs, api] = useSpring(() => ({
+        from: { x: -300 },
+    }));
+
+    const handleAnimationClick = () => {
+        api.start({
+            from: {
+                x:-300,
+            },
+            to: {
+                x:50,
+            },
+        })
+    }
 
     return (
-        <animated.div
+        <div id="banner" className="d-flex justify-content-center">
+            <animated.div
+            onClick={handleAnimationClick}
             style={{
-                width: 80,
-                height: 80,
-                background: '#ff6d6d',
-                borderRadius: 8,
+
                 ...springs,
             }}
-        />
+            >
+                <h1 className="title-banner">AMERICAN URBAN LEGENDS</h1>
+            </animated.div>
+        </div>
     )
 
 };
