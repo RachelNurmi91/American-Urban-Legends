@@ -26,7 +26,7 @@ const Banner = () => {
                 ...springs,
             }}
             >
-                <h1 className="title-banner">AMERICAN URBAN LEGENDS</h1>
+                <h1 className="title-banner text-white">AMERICAN URBAN LEGENDS</h1>
             </animated.div>
         </div>
     )

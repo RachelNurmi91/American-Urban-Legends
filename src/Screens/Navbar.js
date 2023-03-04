@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom'
-import '../App.css'
-import logo from '../images/logo.png'
+// import { Link } from 'react-router-dom';
+import '../App.css';
+import logo from '../images/logo.png';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Navbar = () => {
 
@@ -16,10 +17,22 @@ const Navbar = () => {
                 <div className='collapse navbar-collapse' id='navbarNav'>
                     <ul className='navbar-nav'>
                         <li className='nav-item'>
-                            <Link to="/" className='nav-link'>Home</Link>
+                            <Link to="/#home-content" className='nav-link'>Home</Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to="/states" className='nav-link'>States</Link>
+                            <Link to="/#northeast" className='nav-link'>Northeast</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to="/#midwest" className='nav-link'>Midwest</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to="/#west" className='nav-link'>West</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to="/#southwest" className='nav-link'>Southwest</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to="/#southeast" className='nav-link'>Southeast</Link>
                         </li>
                     </ul>
                 </div>

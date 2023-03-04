@@ -11,13 +11,11 @@
   font: 6vw 'IM Fell English SC', serif;
   padding: 10%;
   margin: 0;
-  color: #fff;
   text-shadow: 5px 5px 5px #000;
 }
 
 #home-content {
   background-color: #282c34;
-  color: #fff;
   padding: 5% 15%;
 }
 
@@ -31,5 +29,10 @@
 
 #banner {
   height: 400px;
+}
+
+#northeast {
+  background-color: #000;
+  padding: 5% 15%;
 }
 
