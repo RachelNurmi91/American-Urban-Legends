@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './Screens/Home';
-import Navbar from './Screens/Navbar';
-import StateList from './Screens/StateList';
-import State from './Screens/State';
-import NotFound from './Screens/NotFound'
-import Footer from './Screens/Footer';
+import Home from './screens/Home';
+import Navbar from './screens/Navbar';
+import StateList from './screens/StateList';
+import State from './screens/State';
+import NotFound from './screens/NotFound'
+import Footer from './screens/Footer';
 
 
 function App() {

@@ -1,5 +1,5 @@
-.navbar, #footer {
-  background-color: rgb(202, 143, 65);
+.navbar, #footer, .orange {
+  background-color: rgb(226, 159, 70);
 }
 
 #footer {
@@ -14,11 +14,6 @@
   text-shadow: 5px 5px 5px #000;
 }
 
-#home-content {
-  background-color: #282c34;
-  padding: 5% 15%;
-}
-
 #home {
   background-image: url(images/campfire-banner.jpg);
   background-size: cover;
@@ -31,8 +26,27 @@
   height: 400px;
 }
 
-#northeast {
-  background-color: #000;
+.main-content {
+
+}
+
+.content-main {
   padding: 5% 15%;
+}
+
+.content-main h1{
+  color: #fff;
+}
+
+.content-main p {
+  color: #fff;
+}
+
+.solid {
+  background-color: #000;
+}
+
+.trans {
+  background-color: #000000be;
 }
 
