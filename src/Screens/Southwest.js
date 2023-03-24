@@ -1,4 +1,4 @@
-const Southwest = () => {
+const Southwest = ({ sendStoryToState }) => {
 
     return (
         <>

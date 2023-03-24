@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Banner from './Banner'
 import HomeContent from './HomeContent';
 import Midwest from './Midwest';
@@ -6,18 +6,20 @@ import Northeast from './Northeast';
 import Southeast from './Southeast';
 import Southwest from './Southwest';
 import West from './West';
-import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap"
-
+import StoryModal from "./StoryModal";
 
 const Home = () => {
     const [isStoryModalOpen, setIsStoryModalOpen] = useState(false);
+    const selectedStory = useRef(null);
 
     const toggleStoryModal = () => {
+        console.log('HIT')
         setIsStoryModalOpen(!isStoryModalOpen);
     }
 
     const sendStoryToState = (story) => {
-        // Here we will set the Redux state with the chosen story
+        selectedStory.current = story;
+        toggleStoryModal();
     }
 
 
@@ -32,11 +34,8 @@ const Home = () => {
                 <Southwest sendStoryToState={sendStoryToState}/>
                 <Southeast sendStoryToState={sendStoryToState}/>
             </div>
-            <Modal isOpen={isStoryModalOpen} toggle={toggleStoryModal}>
-                <ModalHeader toggle={toggleStoryModal}>Header</ModalHeader>
-                <ModalBody>Body</ModalBody>
-                <ModalFooter>Footer</ModalFooter>
-            </Modal>
+
+            <StoryModal isStoryModalOpen={isStoryModalOpen} toggleStoryModal={toggleStoryModal} selectedStory={selectedStory.current}/>
         </>
     )
 
