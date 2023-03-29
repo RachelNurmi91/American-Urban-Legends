@@ -3,7 +3,7 @@ const Southeast = ({ fetchSummary }) => {
     return (
         <>
             <div id='southeast' className='content-main trans'>
-                <h1 className='text-center'>Southeast</h1>
+                <h1 className='text-center reigion-title'>Southeast</h1>
                 <div className='mt-4'>
                     <div className="container">
                         <div className="row">

@@ -3,13 +3,13 @@ import { useSpring, animated } from "@react-spring/web";
 const Banner = () => {
 
     const [springs, api] = useSpring(() => ({
-        from: { x: -300 },
+        from: { x: 0 },
     }));
 
     const handleAnimationClick = () => {
         api.start({
             from: {
-                x:-300,
+                x:0,
             },
             to: {
                 x:50,

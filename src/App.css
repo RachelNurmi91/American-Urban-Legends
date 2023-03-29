@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 .navbar, #footer, .orange {
-  background-color: rgb(226, 159, 70);
+  background-color: #d17f35;
+}
+
+.nav-link {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
 }
 
 #footer {
@@ -28,6 +33,12 @@
   height: 400px;
 }
 
+button {
+  background-color:  #d17f35 !important;
+  color:  #fff !important;
+  border: 0 !important
+}
+
 .content-main {
   padding: 5% 15%;
 }
@@ -38,6 +49,18 @@
 
 .content-main p {
   color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 187);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 187, 0.664);
+  font-weight: bold;
 }
 
 /* Background color for home region sections */
@@ -55,12 +78,16 @@
 h1 {
   font-family: 'IM Fell English SC', serif;
   text-transform: uppercase;
-  color: #fffbd5;
+  color: #fff;
   font-weight:bold;
   text-align: center;
   padding-bottom: 3%;
   font-size: 3rem;
   }
+
+.reigion-title {
+  color: #fffbd5 !important;
+}
 
 
 h6 {

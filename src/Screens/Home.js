@@ -2,7 +2,7 @@ import { useState, useRef } from "react";
 import Banner from './Banner'
 import HomeContent from './HomeContent';
 import Midwest from './Midwest';
-import Northeast from './Northeast';
+import Northeast from './NortheastRow';
 import Southeast from './Southeast';
 import Southwest from './Southwest';
 import West from './West';
@@ -31,7 +31,7 @@ const Home = () => {
                     <div className="col-4 text-center" key={i}>
                         <h6>{story.title}</h6>
                         <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis tristique sagittis arcu vel laoreet. Nulla et tristique nibh. Proin vitae lectus faucibus, imperdiet urna id, interdum neque.</p>
-                        <button type="button" className="btn btn-outline-primary" onClick={() => sendStoryToState(story.id)}>Primary</button>
+                        <a href="#" onClick={() => sendStoryToState(story.id)}>Continue...</a>
                     </div>
                 )
             }

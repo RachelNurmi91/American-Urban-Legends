@@ -2,7 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
 
-const StateList = () => {
+const NortheastList = () => {
 
     return (
         <>
@@ -14,4 +14,4 @@ const StateList = () => {
 
 };
 
-export default StateList;
+export default NortheastList;

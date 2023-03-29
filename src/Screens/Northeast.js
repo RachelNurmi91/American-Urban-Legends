@@ -1,18 +1,14 @@
-const Northeast = ({ fetchSummary }) => {
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import { useParams } from 'react-router-dom';
+
+const Northeast = () => {
+    const { id } = useParams()
 
     return (
-        <>
-            <div id='northeast' className='content-main trans'>
-                <h1 className='text-center'>Northeast</h1>
-                <div className='mt-4'>
-                    <div className="container">
-                        <div className="row">
-                            {fetchSummary('northeast')}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
+        <div>
+            State {id}
+        </div>
     )
 
 };
