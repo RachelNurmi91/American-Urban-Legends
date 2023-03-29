@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto+Condensed:wght@300;400;700&display=swap');
+
 .navbar, #footer, .orange {
   background-color: rgb(226, 159, 70);
 }
@@ -26,10 +28,6 @@
   height: 400px;
 }
 
-.main-content {
-
-}
-
 .content-main {
   padding: 5% 15%;
 }
@@ -42,6 +40,8 @@
   color: #fff;
 }
 
+/* Background color for home region sections */
+
 .solid {
   background-color: #000;
 }
@@ -50,3 +50,27 @@
   background-color: #000000be;
 }
 
+/* Font */
+
+h1 {
+  font-family: 'IM Fell English SC', serif;
+  text-transform: uppercase;
+  color: #fffbd5;
+  font-weight:bold;
+  text-align: center;
+  padding-bottom: 3%;
+  font-size: 3rem;
+  }
+
+
+h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #d17f35;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 15px;
+}
+
+p {
+  padding: 0 10%;
+}
