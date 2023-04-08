@@ -18,7 +18,7 @@ function App() {
   const listOutAllRegionStories = () => {
     const fullStoryList = LIST_STORIES.map((story, i) => {
         return (
-            <div className="col-4 text-center px-3 py-5" key={i}>
+            <div className="col-md-4 text-center px-3 py-5 content-story-list" key={i}>
                 <h6>{story.title}</h6>
                 <p>{story.summary}</p>
                 <Link to={story.id}>Read More</Link>

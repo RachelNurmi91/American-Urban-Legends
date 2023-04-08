@@ -35,9 +35,9 @@
   background-position: center;
 }
 
-#banner {
-  height: 400px;
-}
+/* #banner {
+  height: 5%;
+} */
 
 button {
   background-color:  #d17f35 !important;
@@ -53,11 +53,11 @@ button {
   color: #fff;
 }
 
-.content-main, .content-story p {
+.content-main, .content-story, .content-story-list p {
   color: #e9e9e9e5;
 }
 
-.content-main h5 {
+.content-main, .content-story-list h5 {
   color:#d17f35
 }
 
