@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const NortheastList = ({listOutAllRegionStories, title}) => {
+const SoutheastList = ({listOutAllRegionStories, title}) => {
 
     return (
         <div className="solid p-4">
@@ -19,4 +19,4 @@ const NortheastList = ({listOutAllRegionStories, title}) => {
 
 };
 
-export default NortheastList;
+export default SoutheastList;

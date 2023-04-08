@@ -1,11 +1,11 @@
 import { useState, useRef } from "react";
 import Banner from './Banner'
 import HomeContent from './HomeContent';
-import Midwest from './Midwest';
+import MidwestRow from './MidwestRow';
 import Northeast from './NortheastRow';
-import Southeast from './Southeast';
-import Southwest from './Southwest';
-import West from './West';
+import SoutheastRow from './SoutheastRow';
+import SouthwestRow from './SouthwestRow';
+import WestRow from './WestRow';
 import StoryModal from "./StoryModal";
 import { STORIES } from "../shared/Stories";
 
@@ -46,10 +46,10 @@ const Home = () => {
                 <Banner />
                 <HomeContent sendStoryToState={sendStoryToState}/>
                 <Northeast sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
-                <Midwest sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
-                <West sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
-                <Southwest sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
-                <Southeast sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
+                <MidwestRow sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
+                <WestRow sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
+                <SouthwestRow sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
+                <SoutheastRow sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
             </div>
 
             <StoryModal isStoryModalOpen={isStoryModalOpen} toggleStoryModal={toggleStoryModal} selectedStory={selectedStory.current}/>

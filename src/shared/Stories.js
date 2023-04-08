@@ -198,6 +198,6 @@ export const STORIES = [
 
             <p>Praesent id urna dui. Mauris ut convallis sem. Integer tincidunt libero non tincidunt vehicula. Aliquam quam augue, porta vel velit ut, dapibus maximus leo. Praesent non vestibulum nisl. Sed vulputate massa vel erat cursus, non mollis libero pretium. Sed sapien risus, tincidunt id urna in, convallis tristique nulla. Donec a hendrerit libero, ac pellentesque odio.</p>
         </div>
-    }
+    },
 
 ]

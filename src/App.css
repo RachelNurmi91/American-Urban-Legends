@@ -9,6 +9,12 @@
   font-size: 1rem;
 }
 
+.region-link {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  color: #ffffe0;
+}
+
 #footer {
   padding: 5px 100px;
   font-size: 11px;
