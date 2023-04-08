@@ -15,7 +15,6 @@ const Home = () => {
     const selectedStory = useRef(null);
 
     const toggleStoryModal = () => {
-        console.log('HIT')
         setIsStoryModalOpen(!isStoryModalOpen);
     };
 

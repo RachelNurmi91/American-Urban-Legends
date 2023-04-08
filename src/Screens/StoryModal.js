@@ -21,7 +21,7 @@ export default function StoryModal({ isStoryModalOpen, toggleStoryModal, selecte
         <Modal isOpen={isStoryModalOpen} toggle={toggleStoryModal}>
             <ModalHeader toggle={toggleStoryModal}>{storyData?.title}</ModalHeader>
             <ModalBody>{storyData?.story}</ModalBody>
-            <ModalFooter><div onClick={() => {toggleStoryModal()}}>Close</div></ModalFooter>
+            <ModalFooter><div onClick={(e) => {e.preventDefault(); toggleStoryModal()}}>Close</div></ModalFooter>
         </Modal>
     )
 

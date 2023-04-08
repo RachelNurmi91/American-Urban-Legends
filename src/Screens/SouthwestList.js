@@ -1,7 +1,12 @@
-import React from 'react';
+import { useLayoutEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const SouthwestList = ({listOutAllRegionStories, title}) => {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+    });
+
 
     return (
         <div className="solid p-4">
