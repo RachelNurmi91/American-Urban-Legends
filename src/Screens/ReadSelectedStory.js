@@ -13,20 +13,31 @@ const ReadSelectedStory = () => {
     });
 
     useEffect(() => {
+        findStory();
+    },[id]);
+
+    
+    const findStory = () => {
         let foundStory = LIST_STORIES.filter(obj => id === obj.id);
 
         if (foundStory) {
-            console.log(foundStory)
             setStoryData(foundStory)
         }
-    },[id]);
+    };
 
     return (
-        <div className="solid content-story">
-            <h1 className="text-center pb-0">{storyData?.[0]?.title}</h1>
-            <h5 className="text-center">{storyData?.[0]?.orgin}</h5>
-            {storyData?.[0]?.story}
-        </div>
+        <>
+            { storyData ?
+                <div className="solid content-story">
+                    <h1 className="text-center pb-0">{storyData?.[0]?.title}</h1>
+                    <h5 className="text-center">{storyData?.[0]?.orgin}</h5>
+                    {storyData?.[0]?.story}
+                </div>
+                :
+                <div className='solid'> LOADING</div> 
+            }
+        </>
+        
     );
 
 };

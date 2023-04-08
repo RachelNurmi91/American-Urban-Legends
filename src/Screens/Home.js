@@ -27,10 +27,10 @@ const Home = () => {
         const storyList = STORIES.map((story, i) => {
             if (story.region === region) {
                 return (
-                    <div className="col-4 text-center" key={i}>
-                        <h6>{story.title}</h6>
-                        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis tristique sagittis arcu vel laoreet. Nulla et tristique nibh. Proin vitae lectus faucibus, imperdiet urna id, interdum neque.</p>
-                        <a href="#" onClick={() => sendStoryToState(story.id)}>Continue...</a>
+                    <div className="col-md-4 featured-story-box" key={i} onClick={() => sendStoryToState(story.id)}>
+                        <h5>{story.title}</h5>
+                        <p className="mb-0">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis tristique sagittis arcu vel laoreet. Nulla et tristique nibh. Proin vitae lectus faucibus, imperdiet urna id, interdum neque.</p>
+                        <a href="#" className="a-continue" onClick={() => sendStoryToState(story.id)}>...</a>
                     </div>
                 )
             }
