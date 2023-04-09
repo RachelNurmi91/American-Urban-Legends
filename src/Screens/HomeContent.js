@@ -4,7 +4,8 @@ const HomeContent = () => {
         <>
             <div id='home-content' className='content-main orange'>
                 <div className='mt-2'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a placerat nisi. Sed ut posuere lorem. Vestibulum lobortis fermentum vulputate. Integer viverra orci ut iaculis tincidunt. Morbi lorem tortor, laoreet non lectus mattis, fermentum laoreet tellus. Duis eu egestas arcu, eu laoreet velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis tristique sagittis arcu vel laoreet. Nulla et tristique nibh. Donec vel magna id mi eleifend bibendum sit amet ut libero. Proin vitae lectus faucibus, imperdiet urna id, interdum neque.</p>
+                    <p className="subhead">Brace yourself for the horror that awaits as we delve into the sinister world of American urban legends. Our website uncovers bone-chilling tales of ghostly apparitions, cursed objects, and demonic possessions from across the country. But beware, once you enter this shadowy realm, you may never escape the nightmares that will follow you into the dark. Join us, if you dare.
+                    </p>
                 </div>
                 
             </div>

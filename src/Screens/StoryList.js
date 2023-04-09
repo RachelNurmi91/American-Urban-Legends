@@ -18,10 +18,10 @@ const StoryList = () => {
         
         const fullStoryList = regionList.map((story, i) => {
             return (
-                <div className="col-md-4 text-center px-3 py-5 content-story-list" key={i}>
-                    <h6>{story.title}</h6>
+                <div className="col-md-4 text-center px-3 py-4 content-story-list story-box pb-5" key={i}>
+                    <h5>{story.title.toUpperCase()}</h5>
                     <p>{story.summary}</p>
-                    <Link to={story.id}>Read More</Link>
+                    <Link to={story.id} className=" button-to-story a-continue btn-bottom ">READ STORY</Link>
                 </div>
             )
         })
@@ -29,7 +29,7 @@ const StoryList = () => {
     };
     
     return (
-        <div className="solid p-4">
+        <div className="solid content-list">
             <h1 className="text-center">{title}</h1>
 
             <div className="container">

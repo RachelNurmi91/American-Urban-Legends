@@ -6,13 +6,15 @@ import StoryList from './screens/StoryList';
 import ReadSelectedStory from './screens/ReadSelectedStory';
 import NotFound from './screens/NotFound'
 import Footer from './screens/Footer';
+import Banner from './screens/Banner';
 
 
 function App() {
 
   return (
-    <>
+    <div id='home'>
     <Navbar />
+    <Banner />
       <Routes>
         <Route path="/" element={<Home/>} />
 
@@ -24,7 +26,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   );
 }
 
