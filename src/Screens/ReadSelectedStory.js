@@ -1,7 +1,7 @@
 import { useEffect, useState, useLayoutEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useParams } from 'react-router-dom';
-import { LIST_STORIES } from '../shared/ListStories';
+import { STORIES } from '../shared/Stories';
 
 const ReadSelectedStory = () => {
     const [storyData, setStoryData] = useState({});
@@ -18,7 +18,7 @@ const ReadSelectedStory = () => {
 
     
     const findStory = () => {
-        let foundStory = LIST_STORIES.filter(obj => id === obj.id);
+        let foundStory = STORIES.filter(obj => id === obj.id);
 
         if (foundStory) {
             setStoryData(foundStory)

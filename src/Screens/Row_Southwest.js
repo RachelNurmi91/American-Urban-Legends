@@ -1,19 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
-const MidwestRow = ({ fetchSummary }) => {
+const SouthwestRow = ({ fetchSummary }) => {
 
     return (
         <>
-            <div id='midwest' className='content-main solid'>
-                <h1 className='text-center reigion-title'>Midwest</h1>
+            <div id='southwest' className='content-main solid'>
+                <h1 className='text-center reigion-title'>Southwest</h1>
                 <div className='mt-4'>
                     <div className="container">
                         <div className="row">
-                            {fetchSummary('midwest')}
+                            {fetchSummary('southwest')}
                         </div>
                         <div className="row">
                             <div className="text-center mt-4">
-                                <Link to="/region/midwest" className='button-to-region px-5'>Visit the Midwest</Link>
+                                <Link to="southwest" state={{ title: 'Southwest'}} className='button-to-region px-5'>Visit the Southwest</Link>
                             </div>
                         </div>
                     </div>
@@ -24,4 +24,4 @@ const MidwestRow = ({ fetchSummary }) => {
 
 };
 
-export default MidwestRow;
+export default SouthwestRow;

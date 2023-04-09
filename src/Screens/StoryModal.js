@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap"
-import { STORIES } from "../shared/Stories";
+import { FEATURED_STORIES } from "../shared/FeaturesStories";
 
 export default function StoryModal({ isStoryModalOpen, toggleStoryModal, selectedStory}) {
     const [storyData, setStorydata] = useState(null)
@@ -10,7 +10,7 @@ export default function StoryModal({ isStoryModalOpen, toggleStoryModal, selecte
     })
 
     const fetchStory = () => {
-        for (let i of STORIES) {
+        for (let i of FEATURED_STORIES) {
             if (i.id === selectedStory) {
                 setStorydata(i)
             }
@@ -18,8 +18,8 @@ export default function StoryModal({ isStoryModalOpen, toggleStoryModal, selecte
     }
 
     return (
-        <Modal isOpen={isStoryModalOpen} toggle={toggleStoryModal}>
-            <ModalHeader toggle={toggleStoryModal}>{storyData?.title}</ModalHeader>
+        <Modal className="content-modal" isOpen={isStoryModalOpen} toggle={toggleStoryModal}>
+            <ModalHeader toggle={toggleStoryModal}><h5>{storyData?.title}</h5></ModalHeader>
             <ModalBody>{storyData?.story}</ModalBody>
             <ModalFooter><div onClick={(e) => {e.preventDefault(); toggleStoryModal()}}>Close</div></ModalFooter>
         </Modal>
