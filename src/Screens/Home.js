@@ -1,5 +1,5 @@
-import { useState, useRef } from "react";
-import Banner from './Banner'
+import { useState, useRef, useContext, useEffect } from "react";
+import { BannerContext } from "./Contexts/BannerContext";
 import HomeContent from './HomeContent';
 import MidwestRow from './Row_Midwest';
 import Northeast from './Row_Northeast';
@@ -13,6 +13,16 @@ import { FEATURED_STORIES } from "../shared/FeaturesStories";
 const Home = () => {
     const [isStoryModalOpen, setIsStoryModalOpen] = useState(false);
     const selectedStory = useRef(null);
+    
+    const { setShowFullBanner } = useContext(BannerContext)
+    
+    useEffect(() => {
+        setShowFullBanner(true)
+
+        return () => {
+            setShowFullBanner(false)
+        }
+    }, [])
 
     const toggleStoryModal = () => {
         setIsStoryModalOpen(!isStoryModalOpen);

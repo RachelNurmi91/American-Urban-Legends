@@ -27,6 +27,13 @@
   text-shadow: 5px 5px 5px #000;
 }
 
+.story-banner {
+  font: 4vw 'IM Fell English SC', serif;
+  padding: 5%;
+  margin: 0;
+  text-shadow: 5px 5px 5px #000;
+}
+
 #home {
   background-image: url(images/campfire-banner.jpg);
   background-size: cover;
@@ -47,6 +54,10 @@ button {
 
 .content-main, .content-list, .content-story {
   padding: 5% 15%;
+}
+
+.content-story {
+  padding: 2% 15% 5%;
 }
 
 .content-main, .content-story h1{
@@ -99,7 +110,7 @@ a:hover {
 }
 
 .trans {
-  background-color: #000000be;
+  background-color: #000000d8;
 }
 
 /* Font */

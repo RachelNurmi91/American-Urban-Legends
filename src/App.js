@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './screens/Home';
 import Navbar from './screens/Navbar';
@@ -7,25 +7,32 @@ import ReadSelectedStory from './screens/ReadSelectedStory';
 import NotFound from './screens/NotFound'
 import Footer from './screens/Footer';
 import Banner from './screens/Banner';
-
+import { BannerContext } from './screens/Contexts/BannerContext';
 
 function App() {
+  const [showFullBanner, setShowFullBanner] = useState(null);
+  const [storyData, setStoryData] = useState({});
 
   return (
     <div id='home'>
-    <Navbar />
-    <Banner />
-      <Routes>
-        <Route path="/" element={<Home/>} />
+      <BannerContext.Provider value={{showFullBanner, setShowFullBanner, storyData, setStoryData}}>
 
-        <Route path=":region">
-          <Route index element={<StoryList/>} />
-          <Route path=':id' element={<ReadSelectedStory/>} />
-        </Route>
+        <Navbar />
+        <Banner />
+        <Routes>
+          <Route path="/" element={<Home/>} />
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
+          <Route path=":region">
+            <Route index element={<StoryList/>} />
+            <Route path=':id' element={<ReadSelectedStory/>} />
+          </Route>
+
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+
+      </BannerContext.Provider>
+    
     </div>
   );
 }

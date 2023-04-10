@@ -1,13 +1,20 @@
-import { useLayoutEffect } from 'react';
+import { useLayoutEffect, useEffect, useContext } from 'react';
+import { BannerContext } from './Contexts/BannerContext';
 import { useLocation, Link } from 'react-router-dom';
 import { STORIES } from '../shared/Stories';
 import 'bootstrap/dist/css/bootstrap.css';
 
 const StoryList = () => {
 
+    const { setShowFullBanner } = useContext(BannerContext)
+
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
+
+    // useEffect(() => {
+    //     setShowFullBanner(false)
+    // }, [])
 
     const location = useLocation();
     const { title } = location.state;

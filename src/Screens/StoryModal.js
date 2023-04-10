@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
+import { BannerContext } from "./Contexts/BannerContext";
 import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap"
 import { FEATURED_STORIES } from "../shared/FeaturesStories";
 
 export default function StoryModal({ isStoryModalOpen, toggleStoryModal, selectedStory}) {
-    const [storyData, setStorydata] = useState(null)
+    const { storyData, setStorydata } = useContext(BannerContext)
 
     useEffect(() => {
         fetchStory();

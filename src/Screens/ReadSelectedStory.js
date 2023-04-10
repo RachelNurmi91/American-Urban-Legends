@@ -1,12 +1,12 @@
-import { useEffect, useState, useLayoutEffect } from 'react';
+import { useEffect, useContext, useLayoutEffect } from 'react';
+import { BannerContext } from './Contexts/BannerContext';
 import 'bootstrap/dist/css/bootstrap.css';
 import { useParams } from 'react-router-dom';
 import { STORIES } from '../shared/Stories';
 
 const ReadSelectedStory = () => {
-    const [storyData, setStoryData] = useState({});
-
     const { id } = useParams();
+    const { storyData, setStoryData } = useContext(BannerContext)
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
@@ -29,7 +29,6 @@ const ReadSelectedStory = () => {
         <>
             { storyData ?
                 <div className="solid content-story">
-                    <h1 className="text-center pb-0">{storyData?.[0]?.title}</h1>
                     <h5 className="text-center">{storyData?.[0]?.orgin}</h5>
                     {storyData?.[0]?.story}
                 </div>
