@@ -1,6 +1,6 @@
 import { useState, useRef, useContext, useEffect } from "react";
 import { BannerContext } from "./Contexts/BannerContext";
-import HomeContent from './HomeContent';
+import Welcome from "./Welcome";
 import MidwestRow from './Row_Midwest';
 import Northeast from './Row_Northeast';
 import SoutheastRow from './Row_Southeast';
@@ -40,7 +40,7 @@ const Home = () => {
                     <div className="col-md-4 p-3 story-box" key={i} onClick={() => sendStoryToState(story.id)}>
                         <h5>{story.title}</h5>
                         <p className="mb-2">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis tristique sagittis arcu vel laoreet. Nulla et tristique nibh. Proin vitae lectus faucibus, imperdiet urna id, interdum neque.</p>
-                        <a href="#" className="a-continue" onClick={() => sendStoryToState(story.id)}>READ FEATURED STORY</a>
+                        <a href="#" className="a-continue" onClick={() => sendStoryToState(story.id)}>Continue...</a>
                     </div>
                 )
             }
@@ -52,7 +52,7 @@ const Home = () => {
     return (
         <>
             <div>
-                <HomeContent sendStoryToState={sendStoryToState}/>
+                <Welcome sendStoryToState={sendStoryToState}/>
                 <Northeast sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
                 <MidwestRow sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>
                 <WestRow sendStoryToState={sendStoryToState} fetchSummary={fetchSummary}/>

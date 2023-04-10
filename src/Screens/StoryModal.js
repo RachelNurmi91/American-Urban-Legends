@@ -4,7 +4,7 @@ import { Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap"
 import { FEATURED_STORIES } from "../shared/FeaturesStories";
 
 export default function StoryModal({ isStoryModalOpen, toggleStoryModal, selectedStory}) {
-    const { storyData, setStorydata } = useContext(BannerContext)
+    const { storyData, setStoryData } = useContext(BannerContext)
 
     useEffect(() => {
         fetchStory();
@@ -13,7 +13,7 @@ export default function StoryModal({ isStoryModalOpen, toggleStoryModal, selecte
     const fetchStory = () => {
         for (let i of FEATURED_STORIES) {
             if (i.id === selectedStory) {
-                setStorydata(i)
+                setStoryData(i)
             }
         }
     }

@@ -12,7 +12,7 @@ const NortheastRow = ({ fetchSummary }) => {
                             {fetchSummary('northeast')}
                         </div>
                         <div className="row">
-                            <div className="text-center mt-5">
+                            <div className="text-center mt-5 pt-3">
                                 <Link to="/northeast" state={{ title: 'Northeast'}} className='button-to-region px-5'>Visit the Northeast</Link>
                             </div>
                         </div>

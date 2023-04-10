@@ -6,15 +6,19 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const StoryList = () => {
 
-    const { setShowFullBanner } = useContext(BannerContext)
+    const { setHideBanner } = useContext(BannerContext)
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
     });
 
-    // useEffect(() => {
-    //     setShowFullBanner(false)
-    // }, [])
+    useEffect(() => {
+        setHideBanner(true)
+
+        return () => {
+            setHideBanner(false)
+        }
+    }, [])
 
     const location = useLocation();
     const { title } = location.state;
@@ -25,7 +29,7 @@ const StoryList = () => {
         
         const fullStoryList = regionList.map((story, i) => {
             return (
-                <div className="col-md-4 text-center px-3 py-4 content-story-list story-box pb-5" key={i}>
+                <div className="col-md-4 text-center px-3 py-4 content-story-list story-box my-3 py-5" key={i}>
                     <h5>{story.title.toUpperCase()}</h5>
                     <p>{story.summary}</p>
                     <Link to={story.id} className=" button-to-story a-continue btn-bottom ">READ STORY</Link>

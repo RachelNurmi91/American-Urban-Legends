@@ -12,10 +12,11 @@ import { BannerContext } from './screens/Contexts/BannerContext';
 function App() {
   const [showFullBanner, setShowFullBanner] = useState(null);
   const [storyData, setStoryData] = useState({});
+  const [hideBanner, setHideBanner] = useState(false)
 
   return (
     <div id='home'>
-      <BannerContext.Provider value={{showFullBanner, setShowFullBanner, storyData, setStoryData}}>
+      <BannerContext.Provider value={{showFullBanner, setShowFullBanner, storyData, setStoryData, hideBanner, setHideBanner}}>
 
         <Navbar />
         <Banner />

@@ -9,7 +9,7 @@ const Navbar = () => {
         <nav className='navbar navbar-expand-sm bg-body-tertiary sticky-top'>
             <div className='container-fluid'>
                 <Link to='/' className='nav-link'>
-                    <img src={logo}/>
+                    <img src={logo} height='50px'/>
                 </Link>
                 <button className='navbar-toggler' type='button' data-bs-toggle='collapse'>
                     <span className='navbar-toggler-icon'></span>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div className='collapse navbar-collapse' id='navbarNav'>
                     <ul className='navbar-nav'>
                         <li className='nav-item'>
-                            <Link to="/#home-content" className='nav-link'>Home</Link>
+                            <Link to="/#welcome-content" className='nav-link'>Home</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to="/#northeast" className='nav-link'>Northeast</Link>
