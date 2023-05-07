@@ -100,13 +100,13 @@ button {
 a {
   text-decoration: none;
   color: rgb(255, 255, 187);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 a:hover {
   text-decoration: none;
   color: rgba(255, 255, 187, 0.664);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .a-continue {
@@ -145,8 +145,8 @@ h1 {
   }
 
 h5 {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 18px;
+  font-family: 'IM Fell English SC', sans-serif;
+  font-size: 30px !important;
 }
 
 h6 {
@@ -213,9 +213,8 @@ p {
   color: #f8dac0;
   cursor: pointer;
   display: inline-block;
-  font-family: Neucha, sans-serif;
-  font-size: 1rem;
-  line-height: 23px;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 25px;
   outline: none;
   padding: .75rem;
   text-decoration: none;
@@ -252,11 +251,13 @@ p {
   color: #f8dac0;
   cursor: pointer;
   display: inline-block;
-  font-family: Neucha, sans-serif;
-  font-size: 1rem;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 16dpx;
   line-height: 23px;
   outline: none;
   padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 50px;
   text-decoration: none;
   transition: all 235ms ease-in-out;
