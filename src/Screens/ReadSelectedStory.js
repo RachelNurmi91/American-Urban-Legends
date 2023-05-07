@@ -29,7 +29,7 @@ const ReadSelectedStory = () => {
         <>
             { storyData ?
                 <div className="solid content-story">
-                    <h5 className="text-center">{storyData?.[0]?.orgin}</h5>
+                    <h5 className="orgin-title">{storyData?.[0]?.orgin}</h5>
                     {storyData?.[0]?.story}
                 </div>
                 :

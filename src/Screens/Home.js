@@ -38,7 +38,7 @@ const Home = () => {
             if (story.region === region) {
                 return (
                     <div className="col-md-4 p-3 story-box" key={i} onClick={() => sendStoryToState(story.id)}>
-                        <h5>{story.title}</h5>
+                        <h5 className="summary-story-title">{story.title}</h5>
                         <p className="mb-2">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis tristique sagittis arcu vel laoreet. Nulla et tristique nibh. Proin vitae lectus faucibus, imperdiet urna id, interdum neque.</p>
                         <a href="#" className="a-continue" onClick={() => sendStoryToState(story.id)}>Continue...</a>
                     </div>

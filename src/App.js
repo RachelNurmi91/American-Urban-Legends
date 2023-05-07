@@ -8,6 +8,7 @@ import NotFound from './screens/NotFound'
 import Footer from './screens/Footer';
 import Banner from './screens/Banner';
 import { BannerContext } from './screens/Contexts/BannerContext';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   const [showFullBanner, setShowFullBanner] = useState(null);

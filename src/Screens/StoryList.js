@@ -29,8 +29,8 @@ const StoryList = () => {
         
         const fullStoryList = regionList.map((story, i) => {
             return (
-                <div className="col-md-4 text-center px-3 py-4 content-story-list story-box my-3 py-5" key={i}>
-                    <h5>{story.title}</h5>
+                <div className="col-md-4 text-center content-story-list story-box my-4" key={i}>
+                    <h5 className="story-title">{story.title}</h5>
                     <p>{story.summary}</p>
                     <Link to={story.id} className="button-to-story a-continue btn-bottom ">READ STORY</Link>
                 </div>
