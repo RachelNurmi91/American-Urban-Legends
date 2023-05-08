@@ -22,7 +22,7 @@ const Navbar = () => {
                 <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id='navbarNav'>
                     <ul className='navbar-nav'>
                         <li className='nav-item'>
-                            <Link to="/#welcome-content" className='nav-link'>Home</Link>
+                            <Link to="/#banner" className='nav-link'>Home</Link>
                         </li>
                         <li className='nav-item'>
                             <Link to="/#northeast" className='nav-link'>Northeast</Link>
