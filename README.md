@@ -1,4 +1,4 @@
-# AmericanUrbanLegends
+# American Urban Legends
 
 Recreated a website using React, JavaScript, Bootstrap, and React Router. I transformed an outdated static website into a dynamic, interactive website. The new website is optimized for all browser sizes, including mobile devices, and features advanced functionality and improved user experience. 
 
