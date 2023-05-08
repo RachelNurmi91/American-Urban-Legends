@@ -12,5 +12,5 @@ Recreated a website using React, JavaScript, Bootstrap, and React Router. I tran
 In this project, I honed my skills in React Router by implementing dynamic routing and direct linking to anchors, resulting in a more streamlined and efficient website with reduced code. I also discovered how to leverage passed-in data objects to create multiple pages within the website, allowing me to simulate distinct pages using a single function instead of manually creating pages for each region and story.
 
 ### Screenshots
-![GitHub Logo](/images/Screen-AmericanUrban.png)
+![GitHub Logo](/Website-1.png)
 > Screenshot of the American Urban Legends index page.
