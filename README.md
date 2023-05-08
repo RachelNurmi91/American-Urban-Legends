@@ -14,3 +14,12 @@ In this project, I honed my skills in React Router by implementing dynamic routi
 ### Screenshots
 ![GitHub Logo](/Website-1.png)
 > Screenshot of the American Urban Legends index page.
+
+![GitHub Logo](/Website-2.png)
+> Screenshot of featured story list
+
+![GitHub Logo](/Website-3.png)
+> Screenshot of a story page.
+
+![GitHub Logo](/Website-4.png)
+> Screenshot of a featured story modal.
