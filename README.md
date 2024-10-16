@@ -8,7 +8,6 @@
 American Urban Legends was created to learn Redux and React Router for the first time. The original American Urban legneds application was a static website. The code you see here was redesigned to be a more dynamic application through the use of React, JavaScript, Redux and React Router. Additionally it has been created to be responsive with all browser sizes, including mobile devices, and features advanced functionality and improved user experience. 
 
 ### Libaries & Packages
- **Journi relies on the following packages and libraries:**
 * [React](https://react.dev/)
 * [React Router](https://reactrouter.com/)
 * [Redux](https://redux.js.org/)
