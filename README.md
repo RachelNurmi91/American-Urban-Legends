@@ -7,7 +7,7 @@
 ## Project Summary
 American Urban Legends was created to learn Redux and React Router for the first time. The original American Urban Legends application was a static website. The code you see here was redesigned to be a more dynamic application through the use of React, JavaScript, Redux, and React Router. Additionally, it has been created to be responsive to all browser sizes, including mobile devices, and features advanced functionality and improved user experience. In this project, I honed my skills in React Router by implementing dynamic routing and direct linking to anchors, resulting in a more streamlined and efficient website with reduced code. I also discovered how to leverage passed-in data objects to create multiple pages within the website, allowing me to simulate distinct pages using a single function instead of manually creating pages for each region and story.
 
-`View the repo for the original static application can he found:` [https://github.com/RachelNurmi91/American-Urban-Legends-Static/](https://github.com/RachelNurmi91/American-Urban-Legends-Static/)
+`View the repo for the original static application:` [here](https://github.com/RachelNurmi91/American-Urban-Legends-Static/)
 
 ### Libaries & Packages
 * [React](https://react.dev/)
