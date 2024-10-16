@@ -9,7 +9,7 @@ American Urban Legends was created to learn Redux and React Router for the first
 
 `View the repo for the original static application:` [here](https://github.com/RachelNurmi91/American-Urban-Legends-Static/)
 
-### Libaries & Packages
+### Libraries & Packages
 * [React](https://react.dev/)
 * [React Router](https://reactrouter.com/)
 * [Redux](https://redux.js.org/)
